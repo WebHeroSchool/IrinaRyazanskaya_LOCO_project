@@ -8,21 +8,21 @@
 <body>
     <header class="header">
         <div class="header__logo">LOCO</div>
-        <div class="header__lang">
-            <a class="header__lang-ru" href="#">RU</a>
-        </div>
+        <button class="header__lang">
+            <span class="header__lang_ru" href="#">RU</span>
+        </button>
         <button class="header__menu-button menu-button">
             <span class="menu-button__line"></span>
             <span class="menu-button__line"></span>
         </button>
     </header>
-    <main>
+    <main class="main">
         <section class="collection">
             <article class="collection__card">
                 <div class="collection__image"></div>
-                <div class="collection__info">
-                    <h1 class="collection__title">Новая коллекция</h1>
-                    <p class="collection__description description">
+                <div class="collection__info info-collection">
+                    <h1 class="info-collection__title">Новая коллекция</h1>
+                    <p class="info-collection__description description">
                         Бесплатная доставка включена.
                         Предложение действует на сайте
                         <a class="description__link" href="#">loco.com</a>
@@ -31,19 +31,31 @@
                         В магазинах предложение не суммируется с другими акциями,
                         предложениями и распродажей.
                     </p>
-                    <button class="collection__button button">ЧИТАТЬ ДАЛЬШЕ</button>
-                    <a class="collection__link-other link" href="#">ДРУГИЕ ПРЕДЛОЖЕНИЯ</a>
+                    <button class="info-collection__button button">ЧИТАТЬ ДАЛЬШЕ</button>
+                    <a class="info-collection__link-other link" href="#">ДРУГИЕ ПРЕДЛОЖЕНИЯ</a>
                 </div>
             </article>
             <div class="collection__social social">
                 <a class="social__item" href="#">
-                    <img src="./images/icon-inst.svg" alt="Ссылка на Instagram" height="43">
+                    <img 
+                        class="social__icon"
+                        src="./images/icon-inst.svg"
+                        alt="Ссылка на Instagram"
+                    >
                 </a>
                 <a class="social__item" href="#">
-                    <img src="./images/icon-vk.svg" alt="Ссылка на vk.com" height="43">
+                    <img
+                        class="social__icon"
+                        src="./images/icon-vk.svg"
+                        alt="Ссылка на vk.com"
+                    >
                 </a>
                 <a class="social__item" href="#">
-                    <img src="./images/icon-fb.svg" alt="Ссылка на Facebook" height="43">
+                    <img
+                        class="social__icon"
+                        src="./images/icon-fb.svg"
+                        alt="Ссылка на Facebook"
+                    >
                 </a>
             </div>
             <div class="collection__scroll"></div>
@@ -55,19 +67,17 @@
                         class="product__image product__image_grey"
                         src="./images/clutch-grey.png"
                         alt="Серый клатч"
-                        width="398"
                     >
                     <img
                         class="product__image product__image_pink"
                         src="./images/clutch-pink.png"
                         alt="Розовый клатч"
-                        width="582"
                     >
                 </div>
-                <div class="product__info">
-                    <h2 class="product__title card-title">Кожаный клатч</h2>
-                    <div class="product__subtitle card-subtitle">ОСЕННЯЯ КОЛЛЕКЦИЯ</div>
-                    <p class="product__description description">
+                <div class="product__info info-product">
+                    <h2 class="info-product__title card-title">Кожаный клатч</h2>
+                    <div class="info-product__subtitle card-subtitle">ОСЕННЯЯ КОЛЛЕКЦИЯ</div>
+                    <p class="info-product__description description">
                         Бесплатная доставка включена.
                         Предложение действует на сайте
                         <a class="description__link" href="#">loco.com</a>
@@ -76,7 +86,7 @@
                         В магазинах предложение не суммируется с другими акциями,
                         предложениями и распродажей.
                     </p>
-                    <div class="product__color color">
+                    <div class="info-product__color color">
                         <input 
                             class="color__input"
                             type="radio"
@@ -115,13 +125,13 @@
                         <label class="color__item color__item_green" for="green">
                         </label>
                     </div>
-                    <span class="product__price">1990₽</span>
-                    <div class="product__quantity quantity">
+                    <span class="info-product__price">1990₽</span>
+                    <div class="info-product__quantity quantity">
                         <button class="quantity__decrease">-</button>
                         <span class="quantity__value">1</span>
                         <button class="quantity__increase">+</button>
                     </div>
-                    <button class="product__button button">ДОБАВИТЬ В КОРЗИНУ</button>
+                    <button class="info-product__button button">ДОБАВИТЬ В КОРЗИНУ</button>
                 </div>
             </article>
             <a class="product__link-other link" href="#">ДРУГИЕ ТОВАРЫ НА LOCO.COM</a>
@@ -129,19 +139,19 @@
         <section class="look">
             <article class="look__card">
                 <img class="look__image" src="./images/look.jpg" alt="Осенний лук" width="912">
-                <div class="look__info">
-                    <h2 class="look__title card-title">Serene Total Look</h2>
-                    <div class="look__subtitle card-subtitle">ОСЕННЯЯ КОЛЛЕКЦИЯ</div>
-                    <p class="look__description description">
+                <div class="look__info info-look">
+                    <h2 class="info-look__title card-title">Serene Total Look</h2>
+                    <div class="info-look__subtitle card-subtitle">ОСЕННЯЯ КОЛЛЕКЦИЯ</div>
+                    <p class="info-look__description description">
                         Джинсы, свитер, обувь.
                         В комплект также входит пакет ароматного чая и кружка.
                     </p>
-                    <div class="look__quantity quantity">
+                    <div class="info-look__quantity quantity">
                         <button class="quantity__decrease">-</button>
                         <span class="quantity__value">1</span>
                         <button class="quantity__increase">+</button>
                     </div>
-                    <button class="look__button button">ДОБАВИТЬ В КОРЗИНУ</button>
+                    <button class="info-look__button button">ДОБАВИТЬ В КОРЗИНУ</button>
                 </div>
             </article>
             <a class="look__link-other link" href="#">ДРУГИЕ ТОВАРЫ НА LOCO.COM</a>
