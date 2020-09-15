@@ -300,7 +300,7 @@ button {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
     /* Общие стили */
 
     .description {
@@ -355,6 +355,7 @@ button {
         font-size: 60px;
         line-height: 62px;
         margin: 0;
+        width: min-content;
     }
 
     .info-collection__description {
@@ -378,8 +379,7 @@ button {
 
 /* Стили для мобильной версии */
 
-@media (max-width: 425px) {
-    
+@media (max-width: 767px) {
     /* Стили для header */
 
     .header {
@@ -413,12 +413,11 @@ button {
     /* Стили для первой секции */
 
     .collection {
-        max-width: 425px;
-        height: 529px;
+        height: 100vh;
         background-image: url(./images/model.jpg);
-        background-size: 540px;
+        background-size: 767px;
         background-repeat: no-repeat;
-        background-position-x: -75px;
+        background-position-x: center;
         background-position-y: -100px;
         background-clip: content-box;
     }
@@ -426,7 +425,7 @@ button {
     .collection__card {
         align-items: flex-end;
         justify-content: flex-start;
-        height: 529px;
+        height: 100vh;
         margin: 0;
     }
 
@@ -437,7 +436,7 @@ button {
     }
 
     .info-collection__title {
-        width: 297px;
+        width: 297px; 
         height: 103px;
         margin: 0;
         font-size: 50px;
@@ -461,6 +460,21 @@ button {
     }
 }
 
+@media (max-width: 425px) {
+    /* Стили для первой секции */
+
+    .collection {
+        max-width: 425px;
+        height: 529px;
+        background-size: 540px;
+        background-position-x: -75px;
+    }
+
+    .collection__card {
+        height: 529px;
+    }
+}
+
 @media (max-width: 320px) {
     /* Стили для первой секции */
 
@@ -468,7 +482,21 @@ button {
         background-position-x: -110px;
     }
 
+    .collection__card {
+        height: 90vh;
+    }
+
     .collection__info {
         margin-left: 10px;
+    }
+}
+
+@media (max-width: 305px) {
+    /* Стили для первой секции */
+
+    .info-collection__title {
+        width: min-content;
+        font-size: 43px;
+        line-height: 44px;
     }
 }
